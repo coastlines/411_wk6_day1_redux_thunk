@@ -13,12 +13,14 @@ import ImportActionMenu from "./ImportActionMenu";
 
 const Import = (props) => {
   return (
-    <div>
+    <div className="import-container">
       <Container component="Paper">
-        <h2>Total Makes: {props.makes.length}</h2>
-        <Button variant="contained" color="primary" onClick={props.fetchMakes}>
-          Import
-        </Button>
+        <div className="import-header">
+          <h2>Total Makes: {props.makes.length}</h2>
+          <Button variant="contained" color="primary" className="import-btn" onClick={props.fetchMakes}>
+            Import
+          </Button>
+        </div>
         <Table>
           <TableHead>
             <TableRow>

@@ -61,3 +61,18 @@ ul {
 .car-paper {
   padding: 50px;
 }
+
+.import-container {
+  margin: 4% 10%;
+}
+
+.import-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0 30px 0;
+}
+
+.import-btn {
+  max-height: 35px;
+  align-self: center;
+}
