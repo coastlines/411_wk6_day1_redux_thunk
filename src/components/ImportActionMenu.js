@@ -14,6 +14,11 @@ const ImportActionMenu = (props) => {
     setAnchorEl(null);
   };
 
+  const handleDelete = () => {
+    handleClose()
+    props.deleteMake(props.index);
+  }
+
   return (
     <div>
       <MoreVert onClick={handleClick}>
@@ -25,7 +30,7 @@ const ImportActionMenu = (props) => {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose}>Delete</MenuItem>
+        <MenuItem onClick={handleDelete}>Delete</MenuItem>
       </Menu>
     </div>
   );

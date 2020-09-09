@@ -21,13 +21,11 @@ const Import = (props) => {
                         </TableRow>
                     </TableHead>
                     <TableBody>
-                        {props.makes.map((make) => (
+                        {props.makes.map((make, index) => (
                             <TableRow key={make.id}>
-                                <TableCell component="th" scope="row">
-                                    {make.MakeName}
-                                </TableCell>
                                 <TableCell align="right">{make.MakeId}</TableCell>
-                                <TableCell align="right"><ImportActionMenu></ImportActionMenu></TableCell>
+                                <TableCell align="right">{make.MakeName}</TableCell>
+                                <TableCell align="right"><ImportActionMenu deleteMake={props.deleteMake} index={index}></ImportActionMenu></TableCell>
                             </TableRow>
                         ))}
                     </TableBody>
