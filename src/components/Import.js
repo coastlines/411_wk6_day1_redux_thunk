@@ -1,6 +1,8 @@
 import React from 'react'
 import { Button, Table, TableHead, TableBody, TableRow, TableCell, Container, Paper } from '@material-ui/core'
 import { MoreVert } from '@material-ui/icons'
+import ImportActionMenu from './ImportActionMenu'
+
 
 const Import = (props) => {
     // fill out this component
@@ -25,7 +27,7 @@ const Import = (props) => {
                                     {make.MakeName}
                                 </TableCell>
                                 <TableCell align="right">{make.MakeId}</TableCell>
-                                <TableCell align="right"><MoreVert></MoreVert></TableCell>
+                                <TableCell align="right"><ImportActionMenu></ImportActionMenu></TableCell>
                             </TableRow>
                         ))}
                     </TableBody>
