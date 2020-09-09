@@ -1,7 +1,7 @@
-import React from 'react'
-import { MoreVert } from '@material-ui/icons'
-import Menu from '@material-ui/core/Menu';
-import MenuItem from '@material-ui/core/MenuItem';
+import React from "react";
+import { MoreVert } from "@material-ui/icons";
+import Menu from "@material-ui/core/Menu";
+import MenuItem from "@material-ui/core/MenuItem";
 
 const ImportActionMenu = (props) => {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -15,14 +15,13 @@ const ImportActionMenu = (props) => {
   };
 
   const handleDelete = () => {
-    handleClose()
+    handleClose();
     props.deleteMake(props.index);
-  }
+  };
 
   return (
     <div>
-      <MoreVert onClick={handleClick}>
-      </MoreVert>
+      <MoreVert onClick={handleClick}></MoreVert>
       <Menu
         id="import-action-menu"
         anchorEl={anchorEl}
@@ -34,6 +33,6 @@ const ImportActionMenu = (props) => {
       </Menu>
     </div>
   );
-}
+};
 
-export default ImportActionMenu
+export default ImportActionMenu;
