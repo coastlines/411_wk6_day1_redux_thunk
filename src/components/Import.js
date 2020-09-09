@@ -9,8 +9,8 @@ const Import = (props) => {
 
     return (
         <div>
-            <p>Import Component</p>
             <Container component='Paper'>
+            <h2>Total Makes: {props.makes.length}</h2>
                 <Button variant='contained' color='primary' onClick={props.fetchMakes}>Import</Button>
                 <Table>
                     <TableHead>
