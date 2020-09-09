@@ -63,7 +63,7 @@ ul {
 }
 
 .import-container {
-  margin: 4% 10%;
+  margin: 4% 18%;
 }
 
 .import-header {
@@ -75,4 +75,15 @@ ul {
 .import-btn {
   max-height: 35px;
   align-self: center;
+}
+
+.MuiTableCell-head {
+  font-weight: 700 !important;
+}
+
+.import-default-display {
+  font-weight: normal;
+  text-align: center;
+  background-color: #eee;
+  padding: 20px;
 }
