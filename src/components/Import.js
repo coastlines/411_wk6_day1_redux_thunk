@@ -8,7 +8,7 @@ const Import = (props) => {
         <div>
             <p>Import Component</p>
             <Container component='Paper'>
-                <Button variant='contained' color='primary'>Import</Button>
+                <Button variant='contained' color='primary' onClick={props.fetchMakes}>Import</Button>
                 <Table>
                     <TableHead>
                         <TableRow>
@@ -17,6 +17,17 @@ const Import = (props) => {
                             <TableCell align="right">Actions</TableCell>
                         </TableRow>
                     </TableHead>
+                    <TableBody>
+                        {props.makes.map((make) => (
+                            <TableRow key={make.id}>
+                                <TableCell component="th" scope="row">
+                                    {make.MakeName}
+                                </TableCell>
+                                <TableCell align="right">{make.MakeId}</TableCell>
+                                <TableCell align="right"></TableCell>
+                            </TableRow>
+                        ))}
+                    </TableBody>
                 </Table>
             </Container>        
         </div>
