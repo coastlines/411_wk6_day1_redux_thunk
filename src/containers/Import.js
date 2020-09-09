@@ -10,7 +10,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    fetchArticles: () => dispatch(fetchMakes())
+    fetchMakes: () => dispatch(fetchMakes())
   }
 }
 
