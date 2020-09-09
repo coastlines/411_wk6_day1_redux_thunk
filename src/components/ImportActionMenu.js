@@ -19,7 +19,7 @@ const ImportActionMenu = (props) => {
       <MoreVert onClick={handleClick}>
       </MoreVert>
       <Menu
-        id="simple-menu"
+        id="import-action-menu"
         anchorEl={anchorEl}
         keepMounted
         open={Boolean(anchorEl)}
